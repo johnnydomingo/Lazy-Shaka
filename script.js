@@ -1,5 +1,9 @@
 console.log('testing');
 
+
+
+
+// const fetchInfo = (beach) => {}
 const BASE_URL = `https://hawaiibeachsafety.com/rest/conditions.json/allow-cors`;
 
   /*
@@ -14,11 +18,14 @@ Data to extract
   .weather
   .wind
   */
+
 const populateDropdownData = (beachData) => {
   const dropdownElem = document.querySelector('#drop-down');
-  const beach = document.querySelector('#drop-down').value;
+
   for (beach in beachData) {
-    if (beachData[beach].length >= 0) {
+    
+    if (beachData[beach].length > 0) {
+      
       const beachOptions = beachData[beach].map((beach) => {
         const beachOption = document.createElement('option');
         beachOption.innerText = `${beach}`;
@@ -26,7 +33,6 @@ const populateDropdownData = (beachData) => {
 
         return beachOption;
       });
-
       dropdownElem.append(...beachOptions);
     } else {
       const beachOption = document.createElement('option');
@@ -38,17 +44,22 @@ const populateDropdownData = (beachData) => {
 }
 
 
-
+const dropdown = document.getElementById('drop-down');
 
 const chooseBeach = (beachList) => {
-  const choice = beachList.find(beach => beach.beach == dropDown.value);
-  console.log(choice);
+  document.querySelector('.beach-list').innerHTML = ' ';
+  beachList.forEach((beach) => {
+  // const choice = beachList.find(beach => beach.beach == dropdown.value);
+  // console.log(choice);
+  // const dropdown = document.getElementById('drop-down');
+  // const location = document.querySelector('#drop-down');
+  // const beach = document.querySelector('#drop-down').value;
   
   const beachInfo = document.createElement('div');
   beachInfo.className = 'beachInfo';
 
   const nameElem = document.createElement('p');
-  nameElem.innerText = [beach].beach;
+  nameElem.innerText = beach.beach;
   beachInfo.append(nameElem);
 
   const surfElem = document.createElement('p');
@@ -65,11 +76,13 @@ const chooseBeach = (beachList) => {
 
   const shoreElem = document.createElement('p');
   shoreElem.innerText = beach.shore;
-  beachShore.append(shoreElem);
-
-  // document.querySelector(beachList).append(beachInfo);
+  beachInfo.append(shoreElem);
+  
+  document.querySelector('.beach-list').append(beachInfo);  
+})
+  // document.querySelector('.beachList').append(beachInfo);
 }
-const dropDown = document.getElementById('drop-down');
+// const dropDown = document.getElementById('drop-down');
 // for (let i = 0; i < data.length; i++) {
 //   const div = document.createElement('div');
 //   div.innerHTML = data[i].surf + data[i].temp + data[i].weather + data[i].wind;
@@ -81,19 +94,18 @@ const searchButton = document.querySelector('form');
 searchButton.addEventListener('click', (ev) => {
   ev.preventDefault();
 
-  // const beach = document.querySelector('#drop-down').value;
-
   fetch(BASE_URL)
   .then((res) => {
     return res.json()
   })
-  .then((resJSON) => {
+    .then((resJSON) => {
+    // console.log(resJSON);
     chooseBeach(resJSON)
-    populatedDropdownData(resJSON);
+    populateDropdownData(resJSON);
   })
-  .catch((err) => {
-    console.error(`ERROR: ${err}`)
-  });
+  // .catch((err) => {
+  //   // console.error(`ERROR: ${err}`)
+  // });
   // console.log(dropDown.value);
   // console.log('button is working');
 });

@@ -21,7 +21,7 @@
   <h3>To access today's conditions, click the button below to open the dropdown list and select your desired location.</h3>
   <div class="drop-down-container">
     <form>
-      <select id="drop-down">
+      <select id="drop-down" onChange="chooseBeach()">
         <option disabled selected> Choose your desired location</option>
       </select> 
 
@@ -56,7 +56,6 @@
         <option value="Waimanalo Beach">Waimanalo Beach</option>
         <option value="Waimea Bay">Waimea Bay</option> -->
       </select>
-      <button id="search">Check conditions!</button>
     </form>
   </div>
   <section class="beach-list">

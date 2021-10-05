@@ -1,3 +1,10 @@
 body {
-  background-color: aquamarine;
+  background-color: rgba(79, 161, 179, 0.625);
+}
+.img1 {
+  width: 70%;
+  position: float;
+}
+.p {
+  position: center;
 }

@@ -8,63 +8,68 @@ What do we want to do?
     its corresponding data
   - we need the button to react to the desired data and display it
   - we want the button to link the data and open to a new page
-  */
-
-// const location = [
-//   {
-//     id: "1"
-//   }
-// ]
-fetch(BASE_URL)
-  .then((res) => {
-    return res.json()
-  })
-  .then((resJSON) => {
-    console.log(resJSON)
-    // showBeachData(resJSON);
-  })
-  .catch((err) => {
-    console.error(`ERROR: ${err}`)
-  });
-
-  /*
-  Data to extract
+Data to extract
   .surf
   .temp
   .weather
   .wind
   */
+const populateDropdownData = (beachData) => {
+  const dropdownElem = document.querySelector('#drop-down');
+  const beach = document.querySelector('#drop-down').value;
+  for (beach in beachData) {
+    if (beachData[beach].length >= 0) {
+      const beachOptions = beachData[beach].map((beach) => {
+        const beachOption = document.createElement('option');
+        beachOption.innerText = `${beach}`;
+        beachOption.value = `${beach}`;
+
+        return beachOption;
+      });
+
+      dropdownElem.append(...beachOptions);
+    } else {
+      const beachOption = document.createElement('option');
+      beachOption.innerText = beach;
+
+      dropdownElem.append(beachOption);
+    }
+  }
+}
+
+
+
 
 const chooseBeach = (beachList) => {
   const choice = beachList.find(beach => beach.beach == dropDown.value);
   console.log(choice);
-
-  const beachInfo = createElement('div');
+  
+  const beachInfo = document.createElement('div');
   beachInfo.className = 'beachInfo';
 
-  const beachName = document.createElement('p');
-  beachName.innerText = beach.beach;
-  beachInfo.append(beachName);
+  const nameElem = document.createElement('p');
+  nameElem.innerText = [beach].beach;
+  beachInfo.append(nameElem);
 
-  const surfReport = document.createElement('p');
-  surfReport.innerText = beach.surf;
-  beachInfo.append(surfReport);
+  const surfElem = document.createElement('p');
+  surfElem.innerText = beach.surf;
+  beachInfo.append(surfElem);
 
-  const beachWeather = document.createElement('p');
-  beachWeather.innerText = beach.weather;
-  beachInfo.append(beachWeather);
+  const weatherElem = document.createElement('p');
+  weatherElem.innerText = beach.weather;
+  beachInfo.append(weatherElem);
 
-  const beachWind = document.createElement('p');
-  beachWind.innerText = beach.wind;
-  beachInfo.append(beachWind);
+  const windElem = document.createElement('p');
+  windElem.innerText = beach.wind;
+  beachInfo.append(windElem);
 
-  document.querySelector(beachList).append(beachInfo);
+  const shoreElem = document.createElement('p');
+  shoreElem.innerText = beach.shore;
+  beachShore.append(shoreElem);
+
+  // document.querySelector(beachList).append(beachInfo);
 }
 const dropDown = document.getElementById('drop-down');
-
-// console.log(dropDown.value);
-// const mainContainer = document.getElementsByClassName('dropDown');
-// const data = 'https://hawaiibeachsafety.com/rest/conditions.json/allow-cors';
 // for (let i = 0; i < data.length; i++) {
 //   const div = document.createElement('div');
 //   div.innerHTML = data[i].surf + data[i].temp + data[i].weather + data[i].wind;
@@ -76,13 +81,15 @@ const searchButton = document.querySelector('form');
 searchButton.addEventListener('click', (ev) => {
   ev.preventDefault();
 
+  // const beach = document.querySelector('#drop-down').value;
+
   fetch(BASE_URL)
   .then((res) => {
     return res.json()
   })
   .then((resJSON) => {
     chooseBeach(resJSON)
-    // showBeachData(resJSON);
+    populatedDropdownData(resJSON);
   })
   .catch((err) => {
     console.error(`ERROR: ${err}`)

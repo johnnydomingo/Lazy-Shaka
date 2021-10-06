@@ -38,9 +38,17 @@ const chooseBeach = () => {
     const beachInfo = document.createElement('div');
     beachInfo.className = 'beachInfo';
 
-    const nameElem = document.createElement('p');
+    const nameElem = document.createElement('h2');
     nameElem.innerText = choice.beach;
     beachInfo.append(nameElem);
+  
+    const islandElem = document.createElement('h3');
+    islandElem.innerText = choice.island;
+    beachInfo.append(islandElem);
+  
+    const shoreElem = document.createElement('h4');
+    shoreElem.innerText = choice.shore;
+    beachInfo.append(shoreElem);
 
     const surfElem = document.createElement('p');
     surfElem.innerText = choice.surf;
@@ -54,9 +62,7 @@ const chooseBeach = () => {
     windElem.innerText = choice.wind;
     beachInfo.append(windElem);
 
-    const shoreElem = document.createElement('p');
-    shoreElem.innerText = choice.shore;
-    beachInfo.append(shoreElem);
+    
   
     document.querySelector('.beach-list').append(beachInfo);
   

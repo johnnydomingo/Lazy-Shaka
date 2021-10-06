@@ -1,4 +1,4 @@
-body {
+html {
   background-color: rgba(79, 161, 179, 0.625);
 }
 h1 {
@@ -8,15 +8,48 @@ h1 {
   padding-top: 30px;
   display: flex;
   justify-content: center;
-  border: 4px solid white; 
+  border: 4px solid white;
+  max-width: 700px;
+  margin: auto;
+}
+
+.introduction {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .img1 {
-  /* margin-right: 50px; */
-  margin-top: 25px;
-  
-  
+  display: block;
+  margin: auto;
+  width: 70%;
+  padding-bottom: 50px;
+  padding-top: 40px;
 }
-.p {
-  position: center;
+
+h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.drop-down-container {
+  text-align: center;
+}
+#drop-down {
+  text-align: center;
+}
+.beach-list {
+  text-align: center;
+}
+/* hr {
+  margin-bottom: 50px;
+} */
+.footer {
+  flex-shrink: 0;
+  max-width: 900px;
+  margin: auto;
+}
+p {
+  text-align: center;
 }

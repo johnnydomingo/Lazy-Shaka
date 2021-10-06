@@ -38,15 +38,15 @@ const chooseBeach = () => {
     const beachInfo = document.createElement('div');
     beachInfo.className = 'beachInfo';
 
-    const nameElem = document.createElement('h2');
+    const nameElem = document.createElement('p');
     nameElem.innerText = choice.beach;
     beachInfo.append(nameElem);
   
-    const islandElem = document.createElement('h3');
+    const islandElem = document.createElement('p');
     islandElem.innerText = choice.island;
     beachInfo.append(islandElem);
   
-    const shoreElem = document.createElement('h4');
+    const shoreElem = document.createElement('p');
     shoreElem.innerText = choice.shore;
     beachInfo.append(shoreElem);
 

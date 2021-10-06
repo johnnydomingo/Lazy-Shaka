@@ -1,9 +1,21 @@
 body {
   background-color: rgba(79, 161, 179, 0.625);
 }
+h1 {
+  font-family: 'Grechen Fuemen', cursive;
+  letter-spacing: 10px;
+  height: 80px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  border: 4px solid white; 
+}
+
 .img1 {
-  width: 70%;
-  position: float;
+  /* margin-right: 50px; */
+  margin-top: 25px;
+  
+  
 }
 .p {
   position: center;

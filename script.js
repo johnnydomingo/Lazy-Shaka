@@ -72,11 +72,37 @@ const chooseBeach = () => {
 
 // function carousel() 
 //   let i;
-//   const playSlideShow = document.getElementsByClassName('slides');
-//   for (i = 0; i < playSlideShow.length; i++) {
-//     playSlideShow[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > playSlideShow.length) { slideIndex = 1 }
-//   playSlideShow[slideIndex - 1].style.display = "block";
-//   setTimeout(carousel, 2500);
+//   const playSlideShow = document.querySelectorAll('.slides');
+// for (i = 0; i < playSlideShow.length; i++) {
+//   setInterval(() => {
+//     playSlideShow[i].style.display = "block";
+//     slideIndex++;
+
+//   }, 2500)
+// }
+// carousel();
+    // playSlideShow[i].style.display = "block";
+    // slideIndex++;
+  // }
+  // slideIndex++;
+  // if (slideIndex > playSlideShow.length) { slideIndex = 1 }
+  // playSlideShow[slideIndex - 1].style.display = "block";
+  // setTimeout(carousel, 2500);
+
+const imageArr = ["https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Diamonhead-Pano_2.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-PRIZE-Shane-Mayers.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/OCEAN-2-Neal-Miyake.jpg"];
+
+const slideShow = () => {
+  const image = document.getElementById('slide');
+  image.src = imageArr[0];
+  for (i = 0; i < imageArr.length; i++) {
+    if (imageArr[i] === image.src) {
+        document.getElementById('slide') = imageArr.src;
+      setInterval(() => {
+        imageArr[0].style.display = "none";
+      }, 2500);
+    }
+    slideShow();
+  }
+}
+// console.log(slideShow);
+// slideShow();

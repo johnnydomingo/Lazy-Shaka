@@ -31,7 +31,7 @@ h1 {
   max-width: 700px;
 }
 .slides {
-  display: flex;
+  display: none;
   width: 100%;
 }
 /* .img1 {

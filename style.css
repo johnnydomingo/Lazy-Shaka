@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(79, 161, 179, 0.625);
+  background-color: rgb(83, 199, 192);
 }
 body {
   height: 100%;
@@ -13,10 +13,11 @@ h1 {
   padding-top: 30px;
   display: flex;
   justify-content: center;
-  border: 8px solid white;
+  border: 8px solid rgba(255, 121, 121, 0.995);
   max-width: 700px;
   margin: auto;
   margin-top: 15px;
+  background-color:rgb(249, 232, 167);
 
 }
 
@@ -34,19 +35,18 @@ h1 {
   display: block;
   margin: auto;
   width: 60%;
-  border-radius: 15px;
-  /* padding-bottom: 40px; */
-  /* padding-top: 50px; */
+  border-radius: 20px;
 }
 img {
-  border: 3px solid white;
+  border: 3px solid rgb(255, 208, 151);
 }
 
 h3 {
   font-family: 'Chakra Petch', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   margin-top: 80px;
+  text-decoration: underline;
   /* padding-top: 80px; */
 }
 .drop-down-container {
@@ -57,19 +57,19 @@ h3 {
 
 #drop-down {
   text-align: center;
-  /* background-color: red; */
   border-radius: 10px;
-  /* height: 20px; */
 }
 select {
-  font-size: 20px;
-  background-color: rgb(247, 219, 126);
+  font-size: 24px;
+  color: white;
+  background-color: rgb(255, 136, 136);
 }
 .beach-list {
   text-align: center;
   padding-bottom: 30px;
-  font-size: 20px;
+  /* font-size: 28px; */
 }
+
 hr {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -82,12 +82,18 @@ hr {
 }
 p {
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   
+}
+article{
+  text-align: center;
+  font-size: 15px;
+  color:rgb(46, 143, 137)
 }
 @media only screen
   and (max-width: 800px){
   h1 {
+    font-size: 35px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -106,5 +112,11 @@ p {
   
   select {
     font-size: 16px;
+  }
+  p {
+    font-size: 15px;
+  }
+  article {
+    font-size: 10px;
   }
   }

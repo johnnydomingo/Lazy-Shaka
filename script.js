@@ -67,3 +67,16 @@ const chooseBeach = () => {
     document.querySelector('.beach-list').append(beachInfo);
   
 };
+// const slideIndex = 0;
+// carousel();
+
+// function carousel() 
+//   let i;
+//   const playSlideShow = document.getElementsByClassName('slides');
+//   for (i = 0; i < playSlideShow.length; i++) {
+//     playSlideShow[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > playSlideShow.length) { slideIndex = 1 }
+//   playSlideShow[slideIndex - 1].style.display = "block";
+//   setTimeout(carousel, 2500);

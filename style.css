@@ -30,8 +30,11 @@ h1 {
   margin: auto;
   max-width: 700px;
 }
-
-.img1 {
+.slides {
+  display: flex;
+  width: 100%;
+}
+/* .img1 {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -40,7 +43,7 @@ h1 {
 }
 img {
   border: 5px solid rgb(37, 128, 135);
-}
+} */
 
 h3 {
   font-family: 'Chakra Petch', sans-serif;
@@ -110,9 +113,9 @@ article{
     font-size: 15px;
     text-align: center;
   }
-  img {
+  /* img {
     border: 2px solid rgb(37, 128, 135);
-  }
+  } */
   h3 {
     font-size: 15px;
   }

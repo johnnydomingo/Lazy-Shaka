@@ -39,20 +39,28 @@ h1 {
 
 h3 {
   font-family: 'Chakra Petch', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 .drop-down-container {
   text-align: center;
   padding-top: 40px;
+  
 }
 #drop-down {
   text-align: center;
-  background-color: red;
+  /* background-color: red; */
+  border-radius: 10px;
+  /* height: 20px; */
+}
+select {
+  font-size: 25px;
+  background-color: rgb(247, 219, 126);
 }
 .beach-list {
   text-align: center;
   padding-bottom: 30px;
+  font-size: 20px;
 }
 hr {
   margin-bottom: 30px;
@@ -60,13 +68,34 @@ hr {
 }
 .footer, 
 .push {
-  /* flex-shrink: 0; */
-  /* max-width: 900px; */
-  /* margin-top: -50px; */
-  /* margin: auto; */
+  margin: auto;
   height: 30px;
+  padding-bottom: 15px;
 }
 p {
   text-align: center;
+  font-size: 18px;
+  
 }
-@
+@media only screen
+  and (max-width: 800px){
+  h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  body {
+    flex-direction: column;
+  }
+  .introduction {
+    font-size: 15px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  select {
+    font-size: 16px;
+  }
+  }

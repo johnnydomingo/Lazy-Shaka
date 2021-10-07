@@ -45,6 +45,7 @@ https://whimsical.com/lazy-shaka-6TrdZtzFgQSWLadfubKPeh
 -Incorpate visual animations to the slideshow
 
 ## Timeframes
+
 | Component | Priority |  Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | :---: |
 | Finding working API | H | 2 hrs | 3 hrs | 

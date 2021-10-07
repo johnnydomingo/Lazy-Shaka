@@ -41,4 +41,7 @@ link: "https://hawaiibeachsafety.com/oahu/alii-beach-park"
 -Incorporate a mediaquery to implement resposive design for a desktop/mobile device
 
 ### PostMVP
--
+-Add a slideshow of images to display the land and people of Hawai'i
+-Incorpate visual animations to the slideshow
+
+## Timeframes

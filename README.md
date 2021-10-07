@@ -66,13 +66,17 @@ This is a portion of my code where I was able to loop through an array of images
 let i = 0;
 const slideShow = () => {
   const image = document.getElementById('slide');
-
   image.src = imageArr[i];
+  image.classList.add('fade');
   i++;
+  setTimeout(() => {
+    image.classList.remove('fade');
+  }, 3500);
   if (i === imageArr.length) {
     i = 0;
   }
 }
+  setInterval(slideShow, 6000);
 ```
 ## Change Log
 

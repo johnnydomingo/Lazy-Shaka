@@ -39,27 +39,27 @@ const chooseBeach = () => {
     beachInfo.className = 'beachInfo';
 
     const islandElem = document.createElement('p');
-    islandElem.innerText = choice.island;
+    islandElem.innerText = `Island: ${choice.island}`;
     beachInfo.append(islandElem);
   
     const shoreElem = document.createElement('p');
-    shoreElem.innerText = choice.shore;
+    shoreElem.innerText = `Region: ${choice.shore}`;
     beachInfo.append(shoreElem);
 
     const surfElem = document.createElement('p');
-    surfElem.innerText = choice.surf;
+    surfElem.innerText = `Surf: ${choice.surf}`;
     beachInfo.append(surfElem);
   
     const tempElem = document.createElement('p');
-    tempElem.innerText = choice.temp;
+    tempElem.innerText = `Temperature: ${choice.temp} F`;
     beachInfo.append(tempElem);
 
     const weatherElem = document.createElement('p');
-    weatherElem.innerText = choice.weather;
+    weatherElem.innerText = `Weather: ${choice.weather}`;
     beachInfo.append(weatherElem);
 
     const windElem = document.createElement('p');
-    windElem.innerText = choice.wind;
+    windElem.innerText = `Wind: ${choice.wind}`;
     beachInfo.append(windElem);
 
     document.querySelector('.beach-list').append(beachInfo);
@@ -72,15 +72,14 @@ const imageArr = ["https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-
 let i = 0;
 const slideShow = () => {
   const image = document.getElementById('slide');
-
   image.src = imageArr[i];
+  image.classList.add('fade');
   i++;
+  setTimeout(() => {
+    image.classList.remove('fade');
+  }, 3500);
   if (i === imageArr.length) {
     i = 0;
   }
 }
-  // setInterval(slideShow, 6000);
-const setTimeout = () => {
-  document.getElementById('slide').style.display = "none"
-}
-// setTimeout(5000);
+  setInterval(slideShow, 6000);

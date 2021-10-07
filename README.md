@@ -2,7 +2,7 @@
 https://johnnydomingo.github.io/Lazy-Shaka/
 
 ## Project Description
-This website will connect the user to their local surf conditions. Not only will the user be able to see data on current wave size, but also data regarding tide levels.
+This website is catered towards anyone interested in the current beach and surf conditions around the Hawaiian Islands. The user will make a selection from the listed options and upon selecting be matched with the current conditions for the day. 
 
 ## API and Data Sample
 https://hawaiibeachsafety.com/rest/conditions.json
@@ -45,3 +45,34 @@ link: "https://hawaiibeachsafety.com/oahu/alii-beach-park"
 -Incorpate visual animations to the slideshow
 
 ## Timeframes
+| Component | Priority |  Estimated Time | Actual Time |
+| --- | :---: | :---: | :---: | :---: |
+| Finding working API | H | 2 hrs | 3 hrs | 
+| Pseudocode/Pre-planning | H | 2 hrs | 2 hrs | 
+| HTML and Javascript Structure | H | 3 hrs | 4 hrs |
+| Displaying Data from API fetch | H | 3 hrs | 10 hrs | 
+| Style page with Flexbox | H | 3 hr | 1 hr | 
+| Stlye page with CSS | H | 4 hrs | 10 hrs | 
+| Applying Media Query | H | 2 hrs | 1 hrs | 
+| Applying and styling slideshow | H | 3 hrs | 6 hrs | 
+| Total | H | 22hrs | 37 hrs |
+
+## Code Snippet 
+
+This is a portion of my code where I was able to loop through an array of images that I created. The objective was simple: I wanted to introduce multiple pictures without having to extend to another webpage or increase the size of the current one. Although this code is part of my PostMVP, I am most proud of it because this allowed me to have a bigger visual impact on my page. 
+
+```
+let i = 0;
+const slideShow = () => {
+  const image = document.getElementById('slide');
+
+  image.src = imageArr[i];
+  i++;
+  if (i === imageArr.length) {
+    i = 0;
+  }
+}
+```
+## Change Log
+
+I changed my API over the weekend because I felt it was too difficult to pinpoint the data I needed. The current API is perfect because it caters specifically to the area I wanted to focus on.

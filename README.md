@@ -34,20 +34,20 @@ https://whimsical.com/lazy-shaka-6TrdZtzFgQSWLadfubKPeh
 ### MVP/PostMVP
 
 ### MVP
--Find and incorporate a marine forecast API
--Use fetch to access data from API and display desired information on page
--Build layout using HTML and Javascript
--Style the page with Flexbox and CSS
--Incorporate a mediaquery to implement resposive design for a desktop/mobile device
+- Find and incorporate a marine forecast API
+- Use fetch to access data from API and display desired information on page
+- Build layout using HTML and Javascript
+- Style the page with Flexbox and CSS
+- Incorporate a mediaquery to implement resposive design for a desktop/mobile device
 
 ### PostMVP
--Add a slideshow of images to display the land and people of Hawai'i
--Incorpate visual animations to the slideshow
+- Add a slideshow of images to display the land and people of Hawai'i
+- Incorpate visual animations to the slideshow
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: | :---: | :---: | :---: |
+| --- | :---: | :---: | :---: |
 | Finding working API | H | 2 hrs| 3 hrs | 
 | Pseudocode/Pre-planning | H | 2 hrs| 2 hrs | 
 | HTML and Javascript Structure | H | 3 hrs| 4 hrs |

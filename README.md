@@ -29,7 +29,7 @@ link: "https://hawaiibeachsafety.com/oahu/alii-beach-park"
 },
 ```
 ## Wireframes
-'Link to WireFrames'
+https://whimsical.com/lazy-shaka-6TrdZtzFgQSWLadfubKPeh
 
 ### MVP/PostMVP
 

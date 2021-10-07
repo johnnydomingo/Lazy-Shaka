@@ -33,14 +33,18 @@ h1 {
 .slideshow-container {
   display: flex;
   height: 100%;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
+  padding-top: 10px;
 }
 #slide {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 70%;
+  width: 65%;
+  /* max-height: 50%; */
+  border: 3px solid white;
+  border-radius: 20px;
 }
 /* img {
   /* vertical-align: middle; */
@@ -83,7 +87,6 @@ select {
 .beach-list {
   text-align: center;
   padding-bottom: 30px;
-  /* font-size: 28px; */
 }
 
 hr {
@@ -124,9 +127,7 @@ article{
     font-size: 15px;
     text-align: center;
   }
-  /* img {
-    border: 2px solid rgb(37, 128, 135);
-  } */
+  
   h3 {
     font-size: 15px;
   }

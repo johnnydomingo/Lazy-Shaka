@@ -66,7 +66,7 @@ const chooseBeach = () => {
   
 };
 
-const imageArr = ["https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Diamonhead-Pano_2.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-PRIZE-Shane-Mayers.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/OCEAN-2-Neal-Miyake.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/SUNSET-1-Leighton-Lum.jpg", "https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Grand-Prize-Winner-1.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/Screen-Shot-2021-01-13-at-11.52.51-AM.png", "https://www.hawaiimagazine.com/content/uploads/2020/12/People-Second-Place.jpg"];
+const imageArr = ["https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-PRIZE-Shane-Mayers.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/OCEAN-2-Neal-Miyake.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/SUNSET-1-Leighton-Lum.jpg", "https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Grand-Prize-Winner-1.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/Screen-Shot-2021-01-13-at-11.52.51-AM.png", "https://www.hawaiimagazine.com/content/uploads/2020/12/People-Second-Place.jpg"];
 
 
 let i = 0;
@@ -79,4 +79,8 @@ const slideShow = () => {
     i = 0;
   }
 }
-  // setInterval(slideShow, 4500);
+  // setInterval(slideShow, 6000);
+const setTimeout = () => {
+  document.getElementById('slide').style.display = "none"
+}
+// setTimeout(5000);

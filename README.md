@@ -46,17 +46,17 @@ https://whimsical.com/lazy-shaka-6TrdZtzFgQSWLadfubKPeh
 
 ## Timeframes
 
-| Component | Priority |  Estimated Time | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | :---: |
-| Finding working API | H | 2 hrs | 3 hrs | 
-| Pseudocode/Pre-planning | H | 2 hrs | 2 hrs | 
-| HTML and Javascript Structure | H | 3 hrs | 4 hrs |
-| Displaying Data from API fetch | H | 3 hrs | 10 hrs | 
-| Style page with Flexbox | H | 3 hr | 1 hr | 
-| Stlye page with CSS | H | 4 hrs | 10 hrs | 
-| Applying Media Query | H | 2 hrs | 1 hrs | 
-| Applying and styling slideshow | H | 3 hrs | 6 hrs | 
-| Total | H | 22hrs | 37 hrs |
+| Finding working API | H | 2 hrs| 3 hrs | 
+| Pseudocode/Pre-planning | H | 2 hrs| 2 hrs | 
+| HTML and Javascript Structure | H | 3 hrs| 4 hrs |
+| Displaying Data from API fetch | H | 3 hrs| 10 hrs | 
+| Style page with Flexbox | H | 3 hr| 1 hr | 
+| Stlye page with CSS | H | 4 hrs| 10 hrs | 
+| Applying Media Query | H | 2 hrs| 1 hrs | 
+| Applying and styling slideshow | H | 3 hrs| 6 hrs | 
+| Total | H | 22hrs| 37 hrs |
 
 ## Code Snippet 
 

@@ -1,7 +1,7 @@
 console.log('testing');
 
 let beachList
-const BASE_URL = `https://hawaiibeachsafety.com/rest/conditions.json/allow-cors`;
+const BASE_URL = `https://hawaiibeachsafety.com/rest/conditions.json/no-cors`;
 
 fetch(BASE_URL)
 .then((res) => {

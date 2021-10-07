@@ -67,42 +67,18 @@ const chooseBeach = () => {
     document.querySelector('.beach-list').append(beachInfo);
   
 };
-// const slideIndex = 0;
-// carousel();
 
-// function carousel() 
-//   let i;
-//   const playSlideShow = document.querySelectorAll('.slides');
-// for (i = 0; i < playSlideShow.length; i++) {
-//   setInterval(() => {
-//     playSlideShow[i].style.display = "block";
-//     slideIndex++;
+const imageArr = ["https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Diamonhead-Pano_2.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-PRIZE-Shane-Mayers.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/OCEAN-2-Neal-Miyake.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/SUNSET-1-Leighton-Lum.jpg", "https://www.hawaiimagazine.com/content/uploads/2020/12/Food-First-Place.jpg", "https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Grand-Prize-Winner-1.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/1125-Chris-Donaldson-2.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/Screen-Shot-2021-01-13-at-11.52.51-AM.png", "https://www.hawaiimagazine.com/content/uploads/2021/01/SUNSET-2-Dennis-Douglas.jpg", "https://www.hawaiimagazine.com/content/uploads/2020/12/Ocean-First-Place.jpg", "https://www.hawaiimagazine.com/content/uploads/2020/12/People-Second-Place.jpg"];
 
-//   }, 2500)
-// }
-// carousel();
-    // playSlideShow[i].style.display = "block";
-    // slideIndex++;
-  // }
-  // slideIndex++;
-  // if (slideIndex > playSlideShow.length) { slideIndex = 1 }
-  // playSlideShow[slideIndex - 1].style.display = "block";
-  // setTimeout(carousel, 2500);
 
-const imageArr = ["https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/Diamonhead-Pano_2.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/GRAND-PRIZE-Shane-Mayers.jpg", "https://www.hawaiimagazine.com/content/uploads/2021/01/OCEAN-2-Neal-Miyake.jpg"];
-
+let i = 0;
 const slideShow = () => {
   const image = document.getElementById('slide');
-  image.src = imageArr[0];
-  for (i = 0; i < imageArr.length; i++) {
-    if (imageArr[i] === image.src) {
-        document.getElementById('slide') = imageArr.src;
-      setInterval(() => {
-        imageArr[0].style.display = "none";
-      }, 2500);
-    }
-    slideShow();
+
+  image.src = imageArr[i];
+  i++;
+  if (i === imageArr.length) {
+    i = 0;
   }
 }
-// console.log(slideShow);
-// slideShow();
+  // setInterval(slideShow, 4000);
